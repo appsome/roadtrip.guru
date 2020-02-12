@@ -127,9 +127,13 @@
 			<div class="col-lg-3"></div>
 			
 			<div class="col-lg-6">			
-			<form id="myForm" method="POST" action="subscribe.php" onSubmit="alert('Thank you for your interest!');"> 
+			<form id="myForm" method="POST" action="https://lb.benchmarkemail.com//code/lbform" accept-charset="UTF-8"> 
 				<div class="input-group mb-3">
-					<input type="text" class="form-control" placeholder="E-mail address" aria-label="Your e-mail address"">
+					<input type=hidden name=successurl value="https://lb.benchmarkemail.com/Code/Welcome" />
+					<input type=hidden name=errorurl value="http://lb.benchmarkemail.com//Code/Error" />
+					<input type=hidden name=token value="mFcQnoBFKMRESi2pWmoUarJ25jqXIyRIfXvlmto9wedfZsDSKTluNA%3D%3D" />
+					<input type=hidden name=doubleoptin value="0" />
+					<input type="email" class="form-control" placeholder="E-mail address" aria-label="Your e-mail address" name="fldEmail" maxlength=100>
 					<div class="input-group-append">
 						<button class="btn bubblyButtons btn-outline-secondary" type="submit"><i class="fas fa-paper-plane"></i> Go!</button>
 					</div>
@@ -176,6 +180,7 @@
             <div class="col-md-3 col-xl-3">
 				<h5>Let's connect</h5>
 				<div class="social-media-list">
+					<div class="social-media"><a href="https://www.instagram.com/road_trip_guru_app/" target="_blank"><i class="fab fa-instagram"></i><span class="social-link">Follow us on Instagram</span></a></div>
 					<div class="social-media"><a href="https://www.facebook.com/get.roadtrip.guru" target="_blank"><i class="fab fa-facebook-f"></i><span class="social-link">Follow us on Facebook</span></a></div>
 					<div class="social-media"><a href="https://twitter.com/Road_Trip_Guru" target="_blank"><i class="fab fa-twitter"></i><span class="social-link">Follow us on Twitter</span></a></div>
 				</div>
